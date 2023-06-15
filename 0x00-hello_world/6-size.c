@@ -2,9 +2,8 @@
 
 /*
  * main - Prints the size of various variable types
- *
  * Return: Always 0 (Success)
-*/
+ */
 int main(void)
 
 {
