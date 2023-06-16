@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+/**
+ * main - prints the alphabet in lowercase, and then in uppercase
+ *
+ * Return: Always 0 (Success)
+*/
+
+int main(void)
+{
+	char a_z;
+
+
+	for (a_z = 'a'; a_z <= 'z';  a_z++)
+	{
+		printf("%c", a_z);
+	}
+	for (a_z = 'A'; a_z <= 'Z';  a_z++)
+        {
+                printf("%c", a_z);
+        }
+	printf("\n");
+
+	return (0);
+}
