@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combination of two digits.
+ * main - prints all possible combination of three digits.
  *
  * Return: Always 0 (Success)
 */
@@ -16,11 +16,13 @@ int main(void)
 			{
 				putchar((n % 10) + '0');
 				putchar((o % 10) + '0');
+				putchar(' ');
 
 				if (n == 9 && o == 9)
 				{
 				continue;
 				}
+
 				putchar(',');
 				putchar(' ');
 			}
