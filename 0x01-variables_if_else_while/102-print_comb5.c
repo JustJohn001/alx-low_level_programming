@@ -10,20 +10,24 @@ int main(void)
 {
 	int n, o;
 
-		for (n = 0; n < 10; n++)
+		for (n = 0; n < 100; n++)
 		{
-			for (o = 0; o < 10; o++)
+			for (o = n + 1; o < 100; o++)
 			{
+				putchar((n / 10) + '0');
 				putchar((n % 10) + '0');
+				putchar(' ');
+				putchar((o / 10) + '0');
 				putchar((o % 10) + '0');
 
-				if (n == 9 && o == 9)
+
+				if (n != 98 || o != 99)
 				{
-				continue;
+					putchar(',');
+					putchar(' ');
 				}
-				putchar(',');
-				putchar(' ');
 			}
+
 		}
 
 	putchar('\n');
