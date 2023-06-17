@@ -22,7 +22,6 @@ int main(void)
 				if (m != 7 || n != 8 || o != 9)
 				putchar(',');
 				putchar(' ');
-				putchar(' ');
 			}
 		}
 	}
