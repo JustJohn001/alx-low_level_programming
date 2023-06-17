@@ -16,15 +16,16 @@ int main(void)
 		{
 			for (o = n + 1; o < 10; o++)
 			{
-				putchar(m + '0');
-				putchar(n + '0');
-				putchar(o + '0');
+				putchar('0' + m);
+				putchar('0' + n);
+				putchar('0' + o);
 				if (m != 7 || n != 8 || o != 9)
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
+	putchar('\n');
 
 	return (0);
 }
