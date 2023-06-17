@@ -20,7 +20,7 @@ int main(void)
 				putchar((o / 10) + '0');
 				putchar((o % 10) + '0');
 
-				if (n == 98 && n == 99)
+				if (n == 98 && o == 99)
 				{
 				continue;
 				}
