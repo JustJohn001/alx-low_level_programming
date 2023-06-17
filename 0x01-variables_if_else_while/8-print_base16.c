@@ -22,7 +22,7 @@ int main(void)
 		putchar(n - 10 + 'a');
 		}
 	}
-		putchar(' ');
+
 	putchar('\n');
 
 	return (0);
