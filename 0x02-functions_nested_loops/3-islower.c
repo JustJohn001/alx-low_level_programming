@@ -2,8 +2,8 @@
 
 /**
  * _islower - checks for lowercase character
- * 
- * @param c is the character to be checked
+ *
+ * @c is the character to be checked
  *
  * Return: 1 for lowercase character 0 for otherwise
  *
