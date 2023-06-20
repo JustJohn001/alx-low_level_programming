@@ -5,6 +5,7 @@
  *
  *@n: the last digit to be printed
  *
+ * Return: last digit's value
  */
 
 int print_last_digit(int n)
