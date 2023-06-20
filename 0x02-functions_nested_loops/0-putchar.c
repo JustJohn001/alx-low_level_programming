@@ -1,16 +1,22 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "main.h"
 
 /**
  * main - _putchar  writes the characters _putchar
  * to stdout
  *
- * Return: 1 Always (Success) and  -1 on erro
+ * Return: 0 Always (Success)
  */
 int main(void)
 {	
-	while(char c
-	int _putchar(char _putchar)
-	putchar ('\n);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
 	return(0);
 }
