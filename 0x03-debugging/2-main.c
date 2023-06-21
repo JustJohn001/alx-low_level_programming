@@ -11,7 +11,7 @@ int main
 	int a, b, c;
 	int largest;
 	
-	a = 9
+	a = 9;
 	b = -98;
 	c = 0;
 
