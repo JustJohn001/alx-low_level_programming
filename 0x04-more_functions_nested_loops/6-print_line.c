@@ -2,7 +2,7 @@
 
 /**
  * print_line - draws a straight line in the terminal
- *
+ * @n: Number of times to draw
  * Return: void
  */
 
