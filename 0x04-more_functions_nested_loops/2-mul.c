@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * mul - mulitiplies two integers
+ * mul - multiplies two integers
  * @c: The first integer
  * @b: The second integer
  * Return: product of a and b
