@@ -1,14 +1,11 @@
 #include "main.h"
 
 /**
- * is_prime_number - returns 1 if the input integer
- * is a prime number, 0 otherwise
- * @n: number to check
- * Return: 1 if n is a prime number, 0 otherwise
- *
  * is_prime_checker - checks if n is divisible
  * by any number from divisor onwards
+ * @n: number to check
  * @divisor: divisor to help check the prime number
+ * Return:1 if a prime number, 0 otherwise
  */
 
 int is_prime_checker(int n, int divisor)
@@ -30,6 +27,13 @@ int is_prime_checker(int n, int divisor)
 		return (is_prime_checker(n, divisor + 1));
 	}
 }
+
+/**
+ * is_prime_number - returns 1 if the input integer
+ * is a prime number, 0 otherwise
+ * @n: number to check
+ * Return: 1 if n is a prime number, 0 otherwise
+ */
 
 int is_prime_number(int n)
 {
