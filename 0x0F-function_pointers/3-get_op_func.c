@@ -1,58 +1,32 @@
 #include "3-calc.h"
 #include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
 
 /**
- * p_add - calculates the sum of a and b
- * @a: int value
- * @b: int value
- * Return: a + b
+ * get_op_func - a functin that selects the correct
+ * function to perform the operation asked by the user
+ * @s: operator to perform
+ * Return: A pointer of the appropriate func name
  */
-int op_add(int a, int b)
+int (*get_op_func(char *s))(int, int)
 {
-        return (a + b);
-}
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	    };
+	int i;
 
-/**
- * op_sub - calculates subtraction of b from a
- * @a: int value
- * @b: int value
- * Return: a - b
- */
-int op_sub(int a, int b)
-{
-        return (a - b);
-}
+	i = 0;
+	while (ops[i].op != NULL && s[1] == '\0')
+	{
+		if (ops[i].op[0] == *s)
+			return ((ops[i].f));
+		i++;
+	}
 
-/**
- * op_mul - calculates multiplication of a and b
- * @a: int value
- * @b: int value
- * Return: a * b
- */
-int op_mul(int a, int b)
-{
-        return (a * b);
-}
-
-/**
- * op_div - calculates division of a by b
- * @a: int value
- * @b: int value
- * Return: a / b
- */
-int op_div(int a, int b)
-{
-        return (a / b);
-}
-
-/**
- * op_mod - calculates a modulo b
- * @a: int value
- * @b: int value
- * Return: a % b
- */
-int op_mod(int a, int b)
-{
-        return (a % b);
+	return (NULL);
 }
