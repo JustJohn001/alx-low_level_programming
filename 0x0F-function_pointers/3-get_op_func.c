@@ -1,3 +1,7 @@
+#include "3-calc.h"
+#include <stdlib.h>
+#include <string.h>
+
 /**
  * p_add - calculates the sum of a and b
  * @a: int value
